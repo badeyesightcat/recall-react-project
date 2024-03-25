@@ -15,7 +15,7 @@ function App() {
         img={{
           width: "960x",
           height: "540px",
-          title: '예시 이미지',
+          title: "예시 이미지",
           src: "https://static-campaign.naver.com/nfs/logoart/logo/1380/4ed6bed0f5fca7218910be92ce03a390.gif",
         }}
       />
@@ -24,6 +24,12 @@ function App() {
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
+        <p>
+          {count % 2 === 0
+            ? `${count} is an even number.`
+            : `${count} is an odd number.`}
+        </p>
+        {count !== 0 && <p>The number is not zero!</p>}
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
