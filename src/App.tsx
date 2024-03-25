@@ -15,6 +15,7 @@ function App() {
         img={{
           width: "960x",
           height: "540px",
+          title: '예시 이미지',
           src: "https://static-campaign.naver.com/nfs/logoart/logo/1380/4ed6bed0f5fca7218910be92ce03a390.gif",
         }}
       />
