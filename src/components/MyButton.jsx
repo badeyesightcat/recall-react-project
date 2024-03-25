@@ -1,11 +1,11 @@
 import { useState } from "react";
 
 export default function MyButton() {
+  const [clicked, setClicked] = useState(0);
+
   const handleClick = () => {
     setClicked((prev) => prev + 1);
   };
-
-  const [clicked, setClicked] = useState(0);
 
   return (
     <>
