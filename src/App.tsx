@@ -16,6 +16,7 @@ function App() {
   return (
     <>
       <MyButton />
+      <MyButton />
       <AboutPage />
       <ImageWrapper
         img={{
