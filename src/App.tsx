@@ -3,9 +3,15 @@ import "./App.css";
 import MyButton from "@/components/MyButton";
 import AboutPage from "@/components/AboutPage";
 import ImageWrapper from "@/components/ImageWrapper";
+import CustomList from "@/components/CustomList";
 
 function App() {
   const [count, setCount] = useState(0);
+  const list = [
+    { title: "Cabbage", isFruit: false, id: 1 },
+    { title: "Garlic", isFruit: false, id: 2 },
+    { title: "Apple", isFruit: true, id: 3 },
+  ];
 
   return (
     <>
@@ -19,6 +25,7 @@ function App() {
           src: "https://static-campaign.naver.com/nfs/logoart/logo/1380/4ed6bed0f5fca7218910be92ce03a390.gif",
         }}
       />
+      <CustomList list={list} />
 
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>

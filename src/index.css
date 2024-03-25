@@ -66,3 +66,14 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+li {
+  list-style: none;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+}
+li:hover {
+  box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.15);
+}
