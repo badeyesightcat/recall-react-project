@@ -7,6 +7,12 @@ import CustomList from "@/components/CustomList";
 
 function App() {
   const [count, setCount] = useState(0);
+  const [clicked, setClicked] = useState(0);
+
+  const handleClick = () => {
+    setClicked((prev) => prev + 1);
+  };
+
   const list = [
     { title: "Cabbage", isFruit: false, id: 1 },
     { title: "Garlic", isFruit: false, id: 2 },
@@ -15,8 +21,8 @@ function App() {
 
   return (
     <>
-      <MyButton />
-      <MyButton />
+      <MyButton clicked={clicked} handleClick={handleClick} />
+      <MyButton clicked={clicked} handleClick={handleClick} />
       <AboutPage />
       <ImageWrapper
         img={{

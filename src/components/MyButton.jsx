@@ -1,11 +1,12 @@
-import { useState } from "react";
+// import { useState } from "react";
 
-export default function MyButton() {
-  const [clicked, setClicked] = useState(0);
+export default function MyButton(props) {
+  const { clicked, handleClick } = props;
+  // const [clicked, setClicked] = useState(0);
 
-  const handleClick = () => {
-    setClicked((prev) => prev + 1);
-  };
+  // const handleClick = () => {
+  //   setClicked((prev) => prev + 1);
+  // };
 
   return (
     <>
